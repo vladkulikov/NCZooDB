@@ -1,0 +1,57 @@
+-- Table: public.animal
+
+-- DROP TABLE public.animal;
+
+CREATE TABLE public.animal
+(
+    name text COLLATE pg_catalog."default" NOT NULL,
+    species text COLLATE pg_catalog."default" NOT NULL,
+    idcage integer NOT NULL,
+    CONSTRAINT animal_pkey PRIMARY KEY (name)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.animal
+    OWNER to postgres;
+
+
+-- Table: public.cage
+
+-- DROP TABLE public.cage;
+
+CREATE TABLE public.cage
+(
+    idcage integer NOT NULL,
+    access integer NOT NULL,
+    giraffe integer NOT NULL,
+    squirrel integer NOT NULL,
+    penguin integer NOT NULL,
+    leon integer NOT NULL,
+    CONSTRAINT cage_pkey PRIMARY KEY (idcage)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.cage
+    OWNER to postgres;
+
+
+
+
+
+-- Table: public.log
+
+-- DROP TABLE public.log;
+
+CREATE TABLE public.log
+(
+    idlog bigint NOT NULL DEFAULT nextval('log_idlog_seq'::regclass),
+    log text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT log_pkey PRIMARY KEY (idlog)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.log
+    OWNER to postgres;

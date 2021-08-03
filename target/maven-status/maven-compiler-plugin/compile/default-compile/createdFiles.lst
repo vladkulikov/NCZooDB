@@ -1,0 +1,14 @@
+Model\ZooFactory.class
+Model\AbstractIAnimal.class
+Model\Species.class
+Model\Giraffe.class
+Logic\InhibitionLog.class
+Model\Leon.class
+Model\Squirrel.class
+Model\ZooFactory$1.class
+Logic\InhibitionLog$Builder.class
+Logic\ParserCommand.class
+Model\Penguin.class
+Logic\DataBaseAccess.class
+Model\Main.class
+Model\IAnimal.class
